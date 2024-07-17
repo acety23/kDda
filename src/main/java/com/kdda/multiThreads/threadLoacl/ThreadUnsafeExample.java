@@ -1,4 +1,4 @@
-package com.kdda.multiThreads;
+package com.kdda.multiThreads.threadLoacl;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;

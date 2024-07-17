@@ -1,4 +1,4 @@
-package com.kdda.multiThreads;
+package com.kdda.multiThreads.threadLoacl;
 
 public class ThreadLocalTest {
 
