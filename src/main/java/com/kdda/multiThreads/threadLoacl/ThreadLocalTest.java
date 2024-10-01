@@ -11,7 +11,7 @@ public class ThreadLocalTest {
         localVar.remove();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Thread t1  = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -28,7 +28,7 @@ public class ThreadLocalTest {
             @Override
             public void run() {
                 //设置线程1中本地变量的值
-                localVar.set("localVar2");
+//                localVar.set("localVar2");
                 //调用打印方法
                 print("thread2");
                 //打印本地变量
@@ -37,6 +37,7 @@ public class ThreadLocalTest {
         });
 
         t1.start();
+        t1.join();
         t2.start();
     }
 }
