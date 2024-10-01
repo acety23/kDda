@@ -1,4 +1,4 @@
-package com.kdda.designPatterns.Strategy;
+package com.kdda.designPatterns.behavioral.Strategy.demo1;
 
 // 具体策略：PayPal支付
 public class PayPalPayment implements PaymentStrategy {
