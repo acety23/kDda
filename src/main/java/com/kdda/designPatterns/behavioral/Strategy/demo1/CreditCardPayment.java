@@ -1,4 +1,4 @@
-package com.kdda.designPatterns.behavioral.Strategy.demo1;
+package com.kdda.designPatterns.behavioral.strategy.demo1;
 
 // 具体策略：信用卡支付
 public class CreditCardPayment implements PaymentStrategy {

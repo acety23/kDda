@@ -1,4 +1,4 @@
-package com.kdda.designPatterns.behavioral.Strategy.demo2;
+package com.kdda.designPatterns.behavioral.strategy.demo2;
 
 public class Test {
     public static void main(String[] args) {

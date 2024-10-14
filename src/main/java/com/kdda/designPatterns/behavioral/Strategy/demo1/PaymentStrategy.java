@@ -1,4 +1,4 @@
-package com.kdda.designPatterns.behavioral.Strategy.demo1;
+package com.kdda.designPatterns.behavioral.strategy.demo1;
 
 // 定义支付策略接口
 public interface PaymentStrategy {

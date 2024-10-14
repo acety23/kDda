@@ -1,4 +1,4 @@
-package com.kdda.designPatterns.behavioral.Strategy.demo2;
+package com.kdda.designPatterns.behavioral.strategy.demo2;
 
 import java.util.HashMap;
 import java.util.Map;
