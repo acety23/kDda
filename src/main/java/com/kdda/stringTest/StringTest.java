@@ -23,4 +23,18 @@ public class StringTest {
         System.out.println("String++所花时间：" + time2);
 
     }
+
+    @Test
+    public void test2() {
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append("1$");
+        String s = stringBuffer.toString();
+        System.out.println(s);
+        String[] split = s.split("$");
+        System.out.println(split.length);
+        for (String string : split) {
+            System.out.println(string);
+        }
+
+    }
 }
