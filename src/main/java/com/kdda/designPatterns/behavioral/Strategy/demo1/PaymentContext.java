@@ -1,4 +1,4 @@
-package com.kdda.designPatterns.behavioral.strategy.demo1;
+package com.kdda.designPatterns.behavioral.Strategy.demo1;
 
 // 上下文类，持有一个策略的引用
 public class PaymentContext {

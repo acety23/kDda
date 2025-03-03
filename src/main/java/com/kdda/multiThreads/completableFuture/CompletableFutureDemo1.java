@@ -3,7 +3,6 @@ package com.kdda.multiThreads.completableFuture;
 import org.junit.Test;
 
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -12,7 +11,7 @@ CompletableFuture是一个类，实现了Future和CompletionStage接口；
 不像FutureTask实现了Runnable接口，所以CompleteFuture需要传入任务才可以执行；
 因为实现了Future接口，所以get()等阻塞方法还可以使用。
  */
-public class CompletableFutureDemo {
+public class CompletableFutureDemo1 {
 
     private static ExecutorService executorService;
     static {
@@ -53,7 +52,7 @@ public class CompletableFutureDemo {
         });
         CompletableFuture<String> future2 = CompletableFuture.supplyAsync(() -> {
             try {
-                Thread.sleep(1000);
+                Thread.sleep(10000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
