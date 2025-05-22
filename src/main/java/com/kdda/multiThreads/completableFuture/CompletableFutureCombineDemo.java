@@ -1,5 +1,6 @@
 package com.kdda.multiThreads.completableFuture;
 
+import java.util.Arrays;
 import java.util.concurrent.*;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -26,7 +27,7 @@ public class CompletableFutureCombineDemo {
         }, executor);
 
         // 将所有 futures 放入列表
-        List<CompletableFuture<String>> futures = List.of(future1, future2, future3);
+        List<CompletableFuture<String>> futures = Arrays.asList(future1, future2, future3);
 
         // 使用 allOf 等待所有任务完成
         CompletableFuture<Void> allOfFuture = CompletableFuture.allOf(future1, future2, future3);
